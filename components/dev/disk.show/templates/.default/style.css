@@ -1,0 +1,36 @@
+.folder-list{
+  max-width:400px;
+  margin:0 auto;
+  margin-top:25px;
+}
+.folder-list .folder-list__list-item{
+  transition: all 1s ease;
+}
+.folder-list .folder-list__list-item > div, .folder-list .folder-list__list-item a{
+  cursor:pointer;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  position:relative;
+}
+.folder-list .folder-list__list-item a{
+  color:#495057;
+}
+.folder-list .folder-list__list-item > div.loader:after{
+  display:block;
+  content:"...";
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+.folder-list .folder-list__list-item i{
+  margin-right:10px;
+}
+.folder-list .folder-list__list-item .folder-list{
+  margin:10px 0px 0px 10px;
+  overflow:hidden;
+}
+.folder-list .folder-list__list-item .folder-list li{
+  border:none;
+  padding:7px;
+}
